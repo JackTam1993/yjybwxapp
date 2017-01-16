@@ -1,0 +1,32 @@
+<view>
+    <view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+            <text>最近接诊记录：{{array[index]}}</text>
+            </view>
+        </picker>
+    </view>
+    <view>
+            <text>接诊记录：</text>
+    </view>
+    <view>
+        <view class="weui-panel">
+            <text>1.主题：{{healthData[index].topic}}</text>
+        </view>
+        <view class="weui-panel">
+            <text>2.就诊者的主诉：{{healthData[index].patientRequirement}}</text>
+        </view>
+        <view class="weui-panel">
+            <text>3.就诊者的客观状况：{{healthData[index].patientSituation}}</text>
+        </view>
+        <view class="weui-panel">
+            <text>4.评估：{{healthData[index].evaluation}}</text>
+        </view>
+        <view class="weui-panel">
+            <text>5.处置方法：{{healthData[index].solution}}</text>
+        </view>
+        <view class="weui-panel">
+            <text>6.是否需要转诊？{{healthData[index].trans}}</text>
+        </view>
+    </view>
+</view>

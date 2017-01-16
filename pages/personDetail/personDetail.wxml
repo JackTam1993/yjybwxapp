@@ -1,0 +1,27 @@
+<view>
+    <view>
+        <text>姓名：张某{{personName}}</text>
+        <text>身份证号码：{{id}}</text>
+    </view>
+    <view>
+        <text>年龄：18{{age}}岁</text>
+        <text>联系电话：13912345678{{contactNum}}</text>
+    </view>
+    <view>
+        <text>详细地址：广州市天河区软件路15号{{personAddress}}    </text>
+    </view>
+</view>
+<view class="limitWidth">
+    <view class="weui-panel">
+        <text>个人疾病既往史：{{illness}}</text>
+    </view>
+    <view class="weui-panel">
+        <text>个人不良生活习惯：{{badHabit}}</text>
+    </view>
+    <view class="weui-panel">
+        <text>医疗服务记录：{{medicalRecord}}</text>
+    </view>
+</view>
+<view class="bottomButton">
+    <button type="primary" class="button" bindtap="checkMedicalRecord">查看个人接诊记录表</button>
+</view>

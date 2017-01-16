@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <form>
+  <view class="inputId">
+    <text>请输入身份证号码：</text>
+    <input  bindinput="bindKeyInput" placeholder="" class="inputBorder" bindinput="listenerIdInput"/>
+  </view>  
+  <view class="button">
+    <button type="primary" size="default" bindtap="confirm" form-type="reset">确认</button>
+  </view>
+  </form>
+</view>

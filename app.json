@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personDetail/personDetail",
+    "pages/medicalRecord/medicalRecord"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#a0bcca",
+    "navigationBarTitleText": "壹家医宝",
+    "navigationBarTextStyle":"black"
+  }
+}
