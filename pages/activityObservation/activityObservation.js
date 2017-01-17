@@ -1,15 +1,10 @@
 Page({
   data:{
-    String1:"2",
-    illness:"感冒",
-    badHabit:"晚睡",
-    medicalRecord:"无",
-    id:"1"
+
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
-    this.setData({id:wx.getStorageSync('id')});
-    console.log(this.data.id);
+   
   },
   onReady:function(){
     // 生命周期函数--监听页面初次渲染完成
@@ -32,20 +27,9 @@ Page({
   onShareAppMessage: function() {
     // 用户点击右上角分享
     return {
-      title: "居民详细信息", // 分享标题
-      desc: '用于居民详细信息', // 分享描述
-      path: '/pages/personDetail/personDetail' // 分享路径
+      title: 'title', // 分享标题
+      desc: 'desc', // 分享描述
+      path: 'path' // 分享路径
     }
-  },
-  checkMedicalRecord: function () {
-    wx.navigateTo({
-      url: '../medicalRecord/medicalRecord'
-    })
-  },
-  activityTest: function () {
-    console.log('11');
-    wx.navigateTo({
-      url: '../activityObservation/activityObservation'
-    })
   }
 })

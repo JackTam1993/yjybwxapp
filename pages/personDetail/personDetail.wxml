@@ -24,4 +24,5 @@
 </view>
 <view class="bottomButton">
     <button type="primary" class="button" bindtap="checkMedicalRecord">查看个人接诊记录表</button>
+    <button type="default" class="button" bindtap="activityTest">环境及行为观察测试</button>
 </view>

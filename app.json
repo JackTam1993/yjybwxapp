@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/personDetail/personDetail",
-    "pages/medicalRecord/medicalRecord"
+    "pages/medicalRecord/medicalRecord",
+    "pages/activityObservation/activityObservation"
   ],
   "window":{
     "backgroundTextStyle":"light",
