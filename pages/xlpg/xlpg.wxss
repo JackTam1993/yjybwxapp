@@ -1,5 +1,0 @@
-/* pages/xlpg/xlpg.wxss */
-.new-line {
-   display: flex;
- flex-direction: column;
-}
