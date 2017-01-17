@@ -27,7 +27,8 @@ Page({
   confirm:function () {
     var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
     console.log(this.data.id)
-    if(reg.test(this.data.id)){
+    // if(reg.test(this.data.id)){
+      if(true){
       wx.setStorageSync('id', this.data.id);
       wx.navigateTo({
         url: '../personDetail/personDetail'

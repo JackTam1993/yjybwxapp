@@ -1,6 +1,56 @@
 Page({
   data:{
-
+        location:[
+          {name:"中心城区",checked:true},
+          {name:"城乡结合部"},
+          {name:"农村"}
+          ],
+        noise:[
+          {name:"轻",checked:true},
+          {name:"中"},
+          {name:"重"}
+          ],
+        health:[
+          {name:"好",checked:true},
+          {name:"一般"},
+          {name:"差"}
+          ],
+        plants:[
+          {name:"好",checked:true},
+          {name:"一般"},
+          {name:"差"}
+          ],
+        familyRelationship:[
+          {name:"好",checked:true},
+          {name:"一般"},
+          {name:"差"}
+          ],
+        neighborRelationship:[
+          {name:"好",checked:true},
+          {name:"一般"},
+          {name:"差"}
+          ],
+        amusement:[
+          {name:"无",checked:true},
+          {name:"有且利用"}
+          ],
+        guardians:[
+          {name:"好",checked:true},
+          {name:"一般"},
+          {name:"差"}
+          ],
+        harmed:[
+          {name:"无",checked:true},
+          {name:"有"}
+          ],
+        threated:[
+          {name:"无",checked:true},
+          {name:"有"}
+          ],
+        legalIssue:[
+          {name:"无",checked:true},
+          {name:"有"}
+          ]
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
@@ -31,5 +81,8 @@ Page({
       desc: 'desc', // 分享描述
       path: 'path' // 分享路径
     }
+  },
+  radioChange:function(){
+    console.log("jj");
   }
 })

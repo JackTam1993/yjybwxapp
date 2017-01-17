@@ -54,3 +54,11 @@ view{
     position: fixed;
     width: 100%;
 }
+
+radio-group{
+    padding: 5rpx;
+}
+
+.flex{
+    display: flex;
+}

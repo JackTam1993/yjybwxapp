@@ -1,14 +1,86 @@
 <view class="topic">
 <text>环境及行为观察测试</text>
-<view class="weui_cells_title">带说明的列表项</view>
-<view class="weui_cells">
-    <view class="weui_cell">
-        <view class="weui_cell_bd weui_cell_primary">
-            <p>标题文字</p>
-        </view>
-        <view class="weui_cell_ft">
-            说明文字
-        </view>
-    </view>
 </view>
+<view>
+<view class="weui-cells__title">带说明的列表项</view>
+    <view class="weui-panel">
+        <text>地理位置:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{location}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="weui-panel">
+        <text class="flex">周边环境:</text>
+        <text>噪音状况:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{noise}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>卫生状况:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{health}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>绿化环境:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{plants}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="weui-panel">
+        <text class="flex">家庭环境:</text>
+        <text>家庭关系和谐度:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{familyRelationship}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>邻里关系和谐度:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{neighborRelationship}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="weui-panel">
+        <text class="flex">社区服务:</text>
+        <text>文教娱乐设施:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{amusement}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>治安:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{guardian}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>是否受过刑事案件伤害:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{harmed}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="weui-panel">
+        <text class="flex">心理环境（3个月内）:</text>
+        <text>受过恐吓:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{threated}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        <text>法律纠纷困扰等心理刺激:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{legalIssue}}">
+            <radio checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+    </view>
 </view>
