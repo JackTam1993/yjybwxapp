@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/personDetail/personDetail",
     "pages/medicalRecord/medicalRecord",
-    "pages/activityObservation/activityObservation"
+    "pages/activityObservation/activityObservation",
+    "pages/xlpg/xlpg"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -43,9 +43,13 @@ Page({
     })
   },
   activityTest: function () {
-    console.log('11');
     wx.navigateTo({
       url: '../activityObservation/activityObservation'
+    })
+  },
+  xlpg: function () {
+    wx.navigateTo({
+      url: '../xlpg/xlpg'
     })
   }
 })
