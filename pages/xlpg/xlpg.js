@@ -35,6 +35,7 @@ Page({
       {name: '3', value: '经常'},
       {name: '4', value: '总是这样'}
     ]
+    
   },
   onLoad:function(params){
     // 页面初始化 options为页面跳转所带来的参数
