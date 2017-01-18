@@ -1,0 +1,15 @@
+<!--pages/xlpg/xlpg.wxml-->
+<view class="test">
+   <view class="weui-panel">
+     <text>{{text}}</text>
+   </view>
+   <view wx:for="{{testTxt}}" wx:key="id">
+
+      <text>{{item.id}}.{{item.text}}</text>
+      <radio-group class="radio-group new-line" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+         <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+   </view>
+</view>
